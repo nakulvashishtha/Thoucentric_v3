@@ -1,6 +1,6 @@
 # Progress
 
-**Current:** Checkpoint 4 done (live layer and Sample 2). The user asked for all checkpoints without approval stops.
+**Current:** Checkpoint 5 done (deployment package). Next: the user deploys (RUNBOOK.md), then checkpoint 6 fixes. The user asked for all checkpoints without approval stops.
 
 | Checkpoint | Status |
 |---|---|
@@ -8,7 +8,7 @@
 | 2 Database, state machine, API, fixtures, Sample 1 | Done: contract_check 72/73 (73rd needs Sample 2, checkpoint 4); deep compare matches the recording |
 | 3 Real UI end to end + screenshots | Done: all 12 steps through the browser; docs/checkpoint3 side-by-sides |
 | 4 Live layer + Sample 2 | Done: contract_check 73/73; sample_check passes both samples; live paths tested with stand-ins |
-| 5 Deployment package | Next |
+| 5 Deployment package | Done: image built and run here; 74/74 contract checks in the container; 49 MB memory |
 | 6 Fixes from live testing | Not started |
 
 **Decisions**

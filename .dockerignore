@@ -1,0 +1,13 @@
+.git
+.env
+.env.*
+data/
+**/__pycache__
+tests/
+reference/
+docs/
+design/
+prompts/
+tools/
+deploy/
+*.md

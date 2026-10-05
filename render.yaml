@@ -1,0 +1,19 @@
+# Render blueprint for Research Workbench. Secrets are entered in the Render dashboard (sync: false), never committed.
+services:
+  - type: web
+    name: research-workbench
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free            # switch to "starter" (about 7 USD a month) for the week of the pitch so it never sleeps
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - { key: ANTHROPIC_API_KEY, sync: false }
+      - { key: TAVILY_API_KEY, sync: false }
+      - { key: ADMIN_PASSCODE, sync: false }
+      - { key: MODEL_FAST, value: claude-haiku-4-5 }
+      - { key: MODEL_SMART, value: claude-sonnet-5-5 }
+      - { key: MODE, value: live }
+      - { key: DAILY_SPEND_CAP, value: "5" }
+      - { key: MAX_LLM_CALLS_PER_CASE, value: "150" }
+      - { key: DATA_DIR, value: /app/data }
