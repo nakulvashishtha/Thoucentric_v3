@@ -1,0 +1,4 @@
+/* Added for the live app (not part of the frozen design files). The guide chrome hides every banner; this shows only
+   error banners again (a step that didn't finish, a spending limit, the live service failing), so a failure is never
+   silent. Nothing appears in the normal flow. */
+.banner.error{display:block}

@@ -83,8 +83,6 @@ def decide(case: dict, eid: str, body: dict) -> None:
     if e["status"] in ("duplicate", "pending", "pending_clean", "pass_line_source", "unreadable"):
         raise gate(f"{eid} can't be decided: it is {evidence.STATUS_LABELS.get(e['status'], 'a copy').lower()}.")
     reason = str((body or {}).get("reason") or "").strip()
-    if action == "reject" and not reason:
-        raise ApiError(400, "Give a short reason for rejecting this item.")
     calc = [f for f in e["figures_json"] if f.get("kind") == "calculated" and not f["derivation"].get("formula_confirmed")]
     note, formulas = "", []
     if action in ("approve", "keep_client_reported") and calc:

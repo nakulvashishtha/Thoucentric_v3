@@ -36,7 +36,8 @@ def listing() -> list[dict]:
 
 def reply_file(name: str, idea: str) -> tuple[str, bytes] | None:
     p = pack(name)
-    fn = (p.get("case") or {}).get("replies", {}).get(idea) if p else None
+    replies = (p.get("case") or {}).get("replies", {}) if p else {}
+    fn = replies.get(idea) or (idea if idea in replies.values() else None)     # by idea code or by file name
     if not fn:
         return None
     path = p["dir"] / "replies" / fn

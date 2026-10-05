@@ -43,7 +43,7 @@ def test_review_gate_and_messages():
     assert r.json()["required"] == ["Decide 10 more items", "Look at 6 more sources", "Tick \"I've checked these sources\""]
     # client files and expert notes are never auto-approved
     assert not [e for e in b["evidence"] if e["origin_type"] in ("client_file", "expert_note") and e["status"] == "auto_approved"]
-    assert c.post(f"/api/cases/{cid}/evidence/E10/decision", json={"action": "reject"}).status_code == 400
+    assert c.post(f"/api/cases/{cid}/evidence/E10/decision", json={"action": "maybe"}).status_code == 400
     finish_review(c, cid, b)
     assert c.post(f"/api/cases/{cid}/test/run").status_code == 200
     assert c.post(f"/api/cases/{cid}/evidence/E12/decision", json={"action": "approve"}).status_code == 409

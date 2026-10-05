@@ -48,7 +48,7 @@ def markdown(b: dict) -> str:
                          f"rejected: {k['rejected']} · still waiting: {k['pending']}", ""]
     rej = [e for e in b["evidence"] if e["status"] == "rejected"]
     if rej:
-        L += ["### Rejected evidence (kept on record)"] + [f"- {e['id']} {e['title']}: {e['decision_reason']}" for e in rej] + [""]
+        L += ["### Rejected evidence (kept on record)"] + [f"- {e['id']} {e['title']}: {e['decision_reason'] or 'no reason given'}" for e in rej] + [""]
     concl = b.get("conclusion")
     L += ["## Your conclusion", ""]
     L += [concl["text"] if concl and concl.get("saved_at") else "_Not written yet._", ""]
