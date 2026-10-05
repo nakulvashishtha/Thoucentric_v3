@@ -1,0 +1,36 @@
+{
+ "remove_ideas": [
+  {
+   "code": "H5",
+   "reason": "History of credit cards in India would not change the decision"
+  }
+ ],
+ "decide": {
+  "by_script_tag": {
+   "cross_check": {
+    "action": "keep_cross_check"
+   },
+   "reject_no_method": {
+    "action": "reject",
+    "reason": "No method shown"
+   }
+  },
+  "client_file": {
+   "action": "keep_client_reported"
+  },
+  "client_belief": {
+   "action": "keep_belief"
+  },
+  "default": {
+   "action": "approve"
+  }
+ },
+ "spot_check": "matches",
+ "trips": [
+  {
+   "idea": "H2",
+   "reply": "pilot_costs.xlsx"
+  }
+ ],
+ "conclusion": "Not achievable at the agreed targets: card growth is well below the 20% a year the launch needs. Test a narrower segment before committing."
+}

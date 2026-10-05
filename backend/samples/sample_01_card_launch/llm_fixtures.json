@@ -1,0 +1,1000 @@
+{
+ "READ_SOURCE:bench_h1_share": {
+  "figures": [
+   {
+    "value": null,
+    "low": 6.0,
+    "high": 8.0,
+    "unit": "%",
+    "period": "2023 to 2025",
+    "quote_span": "New issuers won 6 to 8% of new credit cards",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "research firm",
+   "method_cited": true,
+   "original_source_named": true,
+   "original_source_name": "CardScope issuer database",
+   "published_date": "2026-02",
+   "data_as_of": "Dec 2025"
+  }
+ },
+ "READ_SOURCE:bench_h3_cost": {
+  "figures": [
+   {
+    "value": null,
+    "low": 30.0,
+    "high": 35.0,
+    "unit": "%",
+    "period": "2025",
+    "quote_span": "30 to 35% more cheaply than new customers",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "consulting firm archive",
+   "method_cited": true,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2025-09",
+   "data_as_of": "2025"
+  }
+ },
+ "READ_SOURCE:web_fc_copy1": {
+  "figures": [
+   {
+    "value": 13.8,
+    "low": null,
+    "high": null,
+    "unit": "% a year",
+    "period": "2025 to 2030",
+    "quote_span": "will grow 13.8% a year to 2030",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "news outlet",
+   "method_cited": false,
+   "original_source_named": true,
+   "original_source_name": "CardScope India Cards Outlook 2026",
+   "published_date": "2026-03-04",
+   "data_as_of": ""
+  }
+ },
+ "READ_SOURCE:web_rbi": {
+  "figures": [
+   {
+    "value": 5.53,
+    "low": null,
+    "high": null,
+    "unit": "crore cards",
+    "period": "Dec 2019",
+    "quote_span": "stood at 5.53 crore in December 2019",
+    "locator": "para 1"
+   },
+   {
+    "value": 10.8,
+    "low": null,
+    "high": null,
+    "unit": "crore cards",
+    "period": "Dec 2024",
+    "quote_span": "at 10.80 crore in December 2024",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "central bank",
+   "method_cited": true,
+   "original_source_named": true,
+   "original_source_name": "Reserve Bank of India",
+   "published_date": "2025-01",
+   "data_as_of": "Dec 2024"
+  }
+ },
+ "READ_SOURCE:web_fc_copy5": {
+  "figures": [
+   {
+    "value": 13.8,
+    "low": null,
+    "high": null,
+    "unit": "% a year",
+    "period": "2025 to 2030",
+    "quote_span": "grow 13.8% a year",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "news outlet",
+   "method_cited": false,
+   "original_source_named": true,
+   "original_source_name": "CardScope India Cards Outlook 2026",
+   "published_date": "2026-03-12",
+   "data_as_of": ""
+  }
+ },
+ "READ_SOURCE:web_blog_35": {
+  "figures": [
+   {
+    "value": 35.0,
+    "low": null,
+    "high": null,
+    "unit": "% a year",
+    "period": "",
+    "quote_span": "the number of cards is growing 35% a year",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "blog",
+   "method_cited": false,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2026-05",
+   "data_as_of": ""
+  }
+ },
+ "READ_SOURCE:web_news_approvals": {
+  "figures": [
+   {
+    "value": 12.0,
+    "low": null,
+    "high": null,
+    "unit": "months",
+    "period": "",
+    "quote_span": "takes about 12 months",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "news outlet",
+   "method_cited": false,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2026-06-18",
+   "data_as_of": ""
+  }
+ },
+ "READ_SOURCE:arch_growth_study": {
+  "figures": [
+   {
+    "value": null,
+    "low": 12.0,
+    "high": 18.0,
+    "unit": "% a year",
+    "period": "2025 to 2030",
+    "quote_span": "will grow 12 to 18% a year over the next five years",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "consulting firm archive",
+   "method_cited": true,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2025-11",
+   "data_as_of": "Sep 2025"
+  }
+ },
+ "READ_SOURCE:arch_fc_reuse": {
+  "figures": [
+   {
+    "value": 13.8,
+    "low": null,
+    "high": null,
+    "unit": "% a year",
+    "period": "2025 to 2030",
+    "quote_span": "growth of 13.8% a year in credit cards in use",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "consulting firm archive",
+   "method_cited": false,
+   "original_source_named": true,
+   "original_source_name": "CardScope India Cards Outlook 2026",
+   "published_date": "2026-04",
+   "data_as_of": ""
+  }
+ },
+ "READ_SOURCE:arch_approvals_9_11": {
+  "figures": [
+   {
+    "value": null,
+    "low": 9.0,
+    "high": 11.0,
+    "unit": "months",
+    "period": "",
+    "quote_span": "took 9 to 11 months",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "consulting firm archive",
+   "method_cited": true,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2026-01",
+   "data_as_of": "Dec 2025"
+  }
+ },
+ "READ_SOURCE:arch_launch_range": {
+  "figures": [
+   {
+    "value": null,
+    "low": 8.0,
+    "high": 14.0,
+    "unit": "months",
+    "period": "",
+    "quote_span": "ranged from 8 to 14 months",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "consulting firm archive",
+   "method_cited": true,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2025-08",
+   "data_as_of": "Jun 2025"
+  }
+ },
+ "READ_SOURCE:db_forecast": {
+  "figures": [
+   {
+    "value": 13.8,
+    "low": null,
+    "high": null,
+    "unit": "% a year",
+    "period": "2025 to 2030",
+    "quote_span": "will grow 13.8% a year from 2025 to 2030",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "research firm",
+   "method_cited": true,
+   "original_source_named": true,
+   "original_source_name": "CardScope India Cards Outlook 2026",
+   "published_date": "2026-02-27",
+   "data_as_of": "Dec 2025"
+  }
+ },
+ "READ_SOURCE:db_rbi_copy": {
+  "figures": [
+   {
+    "value": 5.53,
+    "low": null,
+    "high": null,
+    "unit": "crore cards",
+    "period": "Dec 2019",
+    "quote_span": "5.53 crore (Dec 2019)",
+    "locator": "para 1"
+   },
+   {
+    "value": 10.8,
+    "low": null,
+    "high": null,
+    "unit": "crore cards",
+    "period": "Dec 2024",
+    "quote_span": "10.80 crore (Dec 2024)",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "research firm",
+   "method_cited": false,
+   "original_source_named": true,
+   "original_source_name": "Reserve Bank of India",
+   "published_date": "2025-02",
+   "data_as_of": "Dec 2024"
+  }
+ },
+ "READ_SOURCE:db_spend_growth": {
+  "figures": [
+   {
+    "value": 22.0,
+    "low": null,
+    "high": null,
+    "unit": "% a year",
+    "period": "2025",
+    "quote_span": "grew 22% a year in 2025",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "research firm",
+   "method_cited": true,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2026-01",
+   "data_as_of": "Dec 2025"
+  }
+ },
+ "READ_SOURCE:db_cost_advantage": {
+  "figures": [
+   {
+    "value": null,
+    "low": 28.0,
+    "high": 36.0,
+    "unit": "%",
+    "period": "",
+    "quote_span": "a 28 to 36% lower cost to sign up existing customers",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "research firm",
+   "method_cited": true,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2025-12",
+   "data_as_of": "Sep 2025"
+  }
+ },
+ "READ_SOURCE:db_cost_advantage_copy": {
+  "figures": [
+   {
+    "value": null,
+    "low": 28.0,
+    "high": 36.0,
+    "unit": "%",
+    "period": "",
+    "quote_span": "a 28 to 36% lower cost to sign up existing customers",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "research firm",
+   "method_cited": true,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2026-03",
+   "data_as_of": "Sep 2025"
+  }
+ },
+ "READ_SOURCE:db_main_bank": {
+  "figures": [
+   {
+    "value": 41.0,
+    "low": null,
+    "high": null,
+    "unit": "%",
+    "period": "",
+    "quote_span": "41% of retail customers who hold a credit card",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "research firm",
+   "method_cited": true,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2026-02",
+   "data_as_of": "Dec 2025"
+  }
+ },
+ "READ_SOURCE:db_certification": {
+  "figures": [
+   {
+    "value": 4.0,
+    "low": null,
+    "high": null,
+    "unit": "months",
+    "period": "",
+    "quote_span": "is 4 months",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "research firm",
+   "method_cited": true,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2026-03",
+   "data_as_of": "Feb 2026"
+  }
+ },
+ "READ_SOURCE:exp_payback": {
+  "figures": [
+   {
+    "value": null,
+    "low": 20.0,
+    "high": 30.0,
+    "unit": "months",
+    "period": "",
+    "quote_span": "recover their sign-up costs in 20 to 30 months",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "industry expert",
+   "method_cited": false,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2026-09",
+   "data_as_of": ""
+  }
+ },
+ "READ_SOURCE:exp_onboarding": {
+  "figures": [
+   {
+    "value": null,
+    "low": 10.0,
+    "high": 12.0,
+    "unit": "months",
+    "period": "",
+    "quote_span": "usually takes 10 to 12 months",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "industry expert",
+   "method_cited": false,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2026-09",
+   "data_as_of": ""
+  }
+ },
+ "LINK_EVIDENCE:web_rbi": {
+  "links": [
+   {
+    "idea": "H1",
+    "figure_index": 2,
+    "role": "supports_test"
+   }
+  ],
+  "derivations": [
+   {
+    "op": "cagr",
+    "a_ref": 0,
+    "b_ref": 1,
+    "years": 5.0,
+    "result_unit": "% a year",
+    "rationale": "Compound annual growth from the December 2019 count to the December 2024 count."
+   }
+  ]
+ },
+ "LINK_EVIDENCE:web_blog_35": {
+  "links": [
+   {
+    "idea": "H1",
+    "figure_index": 0,
+    "role": "supports_test"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:web_news_approvals": {
+  "links": [
+   {
+    "idea": "H4",
+    "figure_index": 0,
+    "role": "context"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:arch_growth_study": {
+  "links": [
+   {
+    "idea": "H1",
+    "figure_index": 0,
+    "role": "supports_test"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:arch_approvals_9_11": {
+  "links": [
+   {
+    "idea": "H4",
+    "figure_index": 0,
+    "role": "supports_test"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:arch_launch_range": {
+  "links": [
+   {
+    "idea": "H4",
+    "figure_index": 0,
+    "role": "context"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:db_forecast": {
+  "links": [
+   {
+    "idea": "H1",
+    "figure_index": 0,
+    "role": "supports_test"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:db_spend_growth": {
+  "links": [
+   {
+    "idea": "H1",
+    "figure_index": 0,
+    "role": "context"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:db_cost_advantage": {
+  "links": [
+   {
+    "idea": "H3",
+    "figure_index": 0,
+    "role": "context"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:db_main_bank": {
+  "links": [
+   {
+    "idea": "H3",
+    "figure_index": 0,
+    "role": "context"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:db_certification": {
+  "links": [
+   {
+    "idea": "H4",
+    "figure_index": 0,
+    "role": "context"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:file:board_note.txt": {
+  "links": [
+   {
+    "idea": "H1",
+    "figure_index": 0,
+    "role": "supports_test"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:file:acquisition_analysis.csv": {
+  "links": [
+   {
+    "idea": "H3",
+    "figure_index": 0,
+    "role": "supports_test"
+   },
+   {
+    "idea": "H2",
+    "figure_index": 1,
+    "role": "context"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:file:customer_base.xlsx": {
+  "links": [
+   {
+    "idea": "H3",
+    "figure_index": 0,
+    "role": "context"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:exp_payback": {
+  "links": [
+   {
+    "idea": "H2",
+    "figure_index": 0,
+    "role": "supports_test"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:exp_onboarding": {
+  "links": [
+   {
+    "idea": "H4",
+    "figure_index": 0,
+    "role": "supports_test"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:file:pilot_costs.xlsx": {
+  "links": [
+   {
+    "idea": "H2",
+    "figure_index": 2,
+    "role": "supports_test"
+   }
+  ],
+  "derivations": [
+   {
+    "op": "ratio",
+    "a_ref": 0,
+    "b_ref": 1,
+    "years": null,
+    "result_unit": "months",
+    "rationale": "Sign-up cost per active card divided by monthly margin per active card gives months to pay back."
+   }
+  ]
+ },
+ "READ_FILE:board_note.txt": {
+  "figures": [
+   {
+    "value": 30.0,
+    "low": null,
+    "high": null,
+    "unit": "% a year",
+    "period": "",
+    "quote_span": "growing about 30% a year",
+    "locator": "line 3"
+   }
+  ],
+  "describe": {
+   "author_type": "client",
+   "method_cited": false,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2026-03",
+   "data_as_of": ""
+  }
+ },
+ "READ_FILE:acquisition_analysis.csv": {
+  "figures": [
+   {
+    "value": 34.0,
+    "low": null,
+    "high": null,
+    "unit": "%",
+    "period": "2025",
+    "quote_span": "34%",
+    "locator": "B4"
+   },
+   {
+    "value": 110.0,
+    "low": null,
+    "high": null,
+    "unit": "INR per month",
+    "period": "2025",
+    "quote_span": "110",
+    "locator": "B5"
+   }
+  ],
+  "describe": {
+   "author_type": "client",
+   "method_cited": true,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2025",
+   "data_as_of": "2025"
+  }
+ },
+ "READ_FILE:customer_base.xlsx": {
+  "figures": [
+   {
+    "value": 42.0,
+    "low": null,
+    "high": null,
+    "unit": "%",
+    "period": "Jun 2026",
+    "quote_span": "42%",
+    "locator": "Summary!B2"
+   }
+  ],
+  "describe": {
+   "author_type": "client",
+   "method_cited": false,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "Jun 2026",
+   "data_as_of": "Jun 2026"
+  }
+ },
+ "READ_FILE:pilot_costs.xlsx": {
+  "figures": [
+   {
+    "value": 2400.0,
+    "low": null,
+    "high": null,
+    "unit": "INR",
+    "period": "2025",
+    "quote_span": "2400",
+    "locator": "Pilot!B2"
+   },
+   {
+    "value": 110.0,
+    "low": null,
+    "high": null,
+    "unit": "INR per month",
+    "period": "2025",
+    "quote_span": "110",
+    "locator": "Pilot!B3"
+   }
+  ],
+  "describe": {},
+  "sample_mix": {
+   "sample": {
+    "existing customers": 42.0,
+    "new customers": 58.0
+   },
+   "target": {
+    "existing customers": 42.0,
+    "new customers": 58.0
+   },
+   "target_note": "National mix of target customers (customer base file)"
+  }
+ },
+ "FRAME": {
+  "client_belief": "The number of credit cards in India is growing about 30% a year.",
+  "decision": "Launch a credit card within 18 months, and break even by year 3?",
+  "case_measure_name": "Credit cards in use, all of India",
+  "case_measure_definition": "Count of credit cards in use (cards, not cardholders) across India, as counted by the central bank."
+ },
+ "PLAN_HYPOTHESES": {
+  "ideas": [
+   {
+    "text": "The market grows fast enough: credit cards in use grow at least 20% a year.",
+    "fact_type": "market",
+    "measure_name": "Growth in credit cards in use",
+    "measure_unit": "% a year",
+    "measure_definition": "Compound annual growth in the count of credit cards in use, all of India.",
+    "comparator": ">=",
+    "pass_line_value": null,
+    "pass_line_formula": "required_growth",
+    "pass_line_source_type": "benchmark",
+    "pass_line_source_note": "New issuers win 6 to 8% of new cards; at that share the card base must grow at least 20% a year for the launch to break even by year 3.",
+    "must_have": true,
+    "recency_category": "size_growth_price",
+    "tolerance_pct": 5.0,
+    "assumptions": [
+     {
+      "name": "required_growth",
+      "label": "Growth the launch needs",
+      "value": 20.0,
+      "unit": "% a year",
+      "min": 5.0,
+      "max": 35.0
+     }
+    ],
+    "benchmark_query": "India new credit card issuers share of new cards 2023 to 2025"
+   },
+   {
+    "text": "The card pays for itself: the sign-up cost is paid back within 24 months.",
+    "fact_type": "client_operational",
+    "measure_name": "Payback on sign-up cost",
+    "measure_unit": "months",
+    "measure_definition": "Sign-up cost per active card divided by the monthly margin per active card.",
+    "comparator": "<=",
+    "pass_line_value": 24.0,
+    "pass_line_formula": "36 - 12",
+    "pass_line_source_type": "client_goal",
+    "pass_line_source_note": "Break even by year 3 (36 months) minus 12 months of launch costs before cards earn.",
+    "must_have": true,
+    "recency_category": "structural_timing",
+    "tolerance_pct": 5.0,
+    "assumptions": []
+   },
+   {
+    "text": "The client has an edge: existing customers are at least 30% cheaper to sign up.",
+    "fact_type": "client_operational",
+    "measure_name": "Sign-up cost advantage for existing customers",
+    "measure_unit": "%",
+    "measure_definition": "How much less it costs to sign up an existing customer than a new one, in percent.",
+    "comparator": ">=",
+    "pass_line_value": 30.0,
+    "pass_line_formula": null,
+    "pass_line_source_type": "benchmark",
+    "pass_line_source_note": "Banks sign up existing customers 30 to 35% more cheaply; the edge must at least match the low end.",
+    "must_have": false,
+    "recency_category": "size_growth_price",
+    "tolerance_pct": 5.0,
+    "assumptions": [],
+    "benchmark_query": "bank credit card acquisition cost existing versus new customers benchmark"
+   },
+   {
+    "text": "Set up in time: the issuing bank and approvals are in place within 12 months.",
+    "fact_type": "market",
+    "measure_name": "Time to set up issuing bank and approvals",
+    "measure_unit": "months",
+    "measure_definition": "Months from starting set-up to having the issuing bank arrangement and approvals in place.",
+    "comparator": "<=",
+    "pass_line_value": null,
+    "pass_line_formula": "18 - build_months",
+    "pass_line_source_type": "client_goal",
+    "pass_line_source_note": "Launch within 18 months, minus 6 months to build the product.",
+    "must_have": false,
+    "recency_category": "structural_timing",
+    "tolerance_pct": 5.0,
+    "assumptions": [
+     {
+      "name": "build_months",
+      "label": "Months needed to build the product",
+      "value": 6.0,
+      "unit": "months",
+      "min": 3.0,
+      "max": 12.0
+     }
+    ]
+   },
+   {
+    "text": "How credit cards developed in India over the past 30 years.",
+    "fact_type": "market",
+    "measure_name": "Years since first card",
+    "measure_unit": "years",
+    "measure_definition": "",
+    "comparator": ">=",
+    "pass_line_value": 0.0,
+    "pass_line_formula": null,
+    "pass_line_source_type": "estimate",
+    "pass_line_source_note": "Background only.",
+    "must_have": false,
+    "recency_category": "structural_timing",
+    "tolerance_pct": 5.0,
+    "assumptions": []
+   }
+  ]
+ },
+ "GENERATE_QUERIES:N1": {
+  "queries": [
+   "India credit cards in use, annual growth forecast 2025 to 2030"
+  ]
+ },
+ "GENERATE_QUERIES:N2": {
+  "queries": [
+   "India credit cards outstanding official monthly data 2019 to 2024"
+  ]
+ },
+ "GENERATE_QUERIES:N7": {
+  "queries": [
+   "retail bank cost to sign up existing versus new customers for credit cards"
+  ]
+ },
+ "GENERATE_QUERIES:N8": {
+  "queries": [
+   "India new credit card issuer set-up time issuing bank and approvals"
+  ]
+ },
+ "ROUTE_NEEDS": {
+  "needs": [
+   {
+    "idea": "H1",
+    "text": "Can Example Client Ltd reach the growth its card launch needs? Forecasts of growth in credit cards in use in India.",
+    "route": "desk",
+    "coverage": "not_covered",
+    "covered_by_file": "",
+    "covered_locator": "",
+    "coverage_note": ""
+   },
+   {
+    "idea": "H1",
+    "text": "Official counts of credit cards in use in India over the last five years.",
+    "route": "desk",
+    "coverage": "not_covered",
+    "covered_by_file": "",
+    "covered_locator": "",
+    "coverage_note": ""
+   },
+   {
+    "idea": "H1",
+    "text": "The client's own view of market growth.",
+    "route": "client",
+    "coverage": "answered_by_client_file",
+    "covered_by_file": "board_note.txt",
+    "covered_locator": "line 3",
+    "coverage_note": ""
+   },
+   {
+    "idea": "H2",
+    "text": "Sign-up cost per active card and monthly margin per active card from the client's pilot.",
+    "route": "client",
+    "coverage": "partly",
+    "covered_by_file": "acquisition_analysis.csv",
+    "covered_locator": "B5",
+    "coverage_note": "The file has the pilot's monthly margin per active card, but not the sign-up cost per active card."
+   },
+   {
+    "idea": "H2",
+    "text": "Typical payback period on sign-up cost for new card issuers.",
+    "route": "expert",
+    "coverage": "not_covered",
+    "covered_by_file": "",
+    "covered_locator": "",
+    "coverage_note": ""
+   },
+   {
+    "idea": "H3",
+    "text": "The client's sign-up cost for existing versus new customers.",
+    "route": "client",
+    "coverage": "answered_by_client_file",
+    "covered_by_file": "acquisition_analysis.csv",
+    "covered_locator": "B4",
+    "coverage_note": ""
+   },
+   {
+    "idea": "H3",
+    "text": "Market evidence on the cost advantage of signing up existing customers.",
+    "route": "desk",
+    "coverage": "not_covered",
+    "covered_by_file": "",
+    "covered_locator": "",
+    "coverage_note": ""
+   },
+   {
+    "idea": "H4",
+    "text": "Time for a new issuer to set up an issuing bank arrangement and approvals in India.",
+    "route": "desk",
+    "coverage": "not_covered",
+    "covered_by_file": "",
+    "covered_locator": "",
+    "coverage_note": ""
+   },
+   {
+    "idea": "H4",
+    "text": "How long bank onboarding and approvals take in practice.",
+    "route": "expert",
+    "coverage": "not_covered",
+    "covered_by_file": "",
+    "covered_locator": "",
+    "coverage_note": ""
+   }
+  ]
+ },
+ "DRAFT_FOLLOWUP:H2": {
+  "question": "What did it cost you to sign up each active card in the 2025 pilot, and who did the pilot sign up?",
+  "what_we_have": "From you we already have the board note, the acquisition analysis (existing customers 34% cheaper to sign up, and the monthly margin per active card from the 2025 pilot) and the customer base summary. We don't yet have the sign-up cost per active card from the pilot."
+ },
+ "SUMMARISE": {
+  "sentences": [
+   {
+    "text": "Independent forecasts put growth in credit cards in use at 13.8% a year and 12 to 18% a year, below the 20% a year the launch needs.",
+    "evidence_ids": [
+     "E16",
+     "E12"
+    ]
+   },
+   {
+    "text": "The pilot reply gives a payback of about 21.8 months, inside the 24-month target.",
+    "evidence_ids": [
+     "E29"
+    ]
+   },
+   {
+    "text": "The client's own data shows existing customers are 34% cheaper to sign up, above the 30% target.",
+    "evidence_ids": [
+     "E24"
+    ]
+   },
+   {
+    "text": "Setting up the issuing bank and approvals takes 9 to 11 months in past launches and 10 to 12 months according to an expert, close to the 12-month target.",
+    "evidence_ids": [
+     "E14",
+     "E27"
+    ]
+   }
+  ]
+ },
+ "UNKNOWNS": {
+  "unknowns": [
+   {
+    "idea": "H1",
+    "text": "Growth among first-time card users outside big cities."
+   },
+   {
+    "idea": "H2",
+    "text": "The client's cost to serve each card after sign-up."
+   }
+  ]
+ }
+}

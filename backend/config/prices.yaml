@@ -1,0 +1,9 @@
+# Price table used by the daily spending cap (US dollars per million tokens, and per search credit).
+# Matched by the start of the model name set in MODEL_FAST / MODEL_SMART. Check the vendors' pages before relying on it.
+models:
+  claude-haiku:   {input: 1.0, output: 5.0}
+  claude-sonnet:  {input: 2.0, output: 10.0}
+  claude-opus:    {input: 15.0, output: 75.0}
+  default:        {input: 3.0, output: 15.0}
+search:
+  tavily_basic: 0.008     # one credit; the free plan includes 1,000 credits a month

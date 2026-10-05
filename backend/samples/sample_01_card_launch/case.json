@@ -1,0 +1,80 @@
+{
+ "name": "sample_01_card_launch",
+ "title": "Credit card launch, India (sample)",
+ "description": "A consumer lender tests whether it can launch a credit card profitably. Pinned sample used for tests and demos.",
+ "country": "India",
+ "industry": "Consumer lending",
+ "function": "Growth strategy",
+ "client_name": "Example Client Ltd",
+ "client_aliases": [
+  "Example Client",
+  "ECL"
+ ],
+ "private_numbers": [
+  "Rs 1,500 crore launch budget",
+  "4.6 lakh active savings customers"
+ ],
+ "raw_ask": "Example Client Ltd wants to launch a credit card in India. They believe the number of credit cards is growing about 30% a year, so they can enter the market profitably.",
+ "client_files": [
+  "board_note.txt",
+  "acquisition_analysis.csv",
+  "customer_base.xlsx"
+ ],
+ "source_plan": [
+  {
+   "source_name": "Reserve Bank of India statistics",
+   "domain": "rbi.org.in",
+   "origin_type": "open_web",
+   "included": true,
+   "removed_reason": null,
+   "stated_by_consultant": false
+  },
+  {
+   "source_name": "Simulated card market database",
+   "domain": "carddata.sample",
+   "origin_type": "paid_db",
+   "included": true,
+   "removed_reason": null,
+   "stated_by_consultant": false
+  },
+  {
+   "source_name": "Firm research archive",
+   "domain": "",
+   "origin_type": "firm_archive",
+   "included": true,
+   "removed_reason": null,
+   "stated_by_consultant": false
+  },
+  {
+   "source_name": "Business press (sample outlets)",
+   "domain": "press.sample",
+   "origin_type": "open_web",
+   "included": true,
+   "removed_reason": null,
+   "stated_by_consultant": true,
+   "tier": 3,
+   "tier_reason": "Named business outlets with editors, used in this sample"
+  },
+  {
+   "source_name": "Open web search",
+   "domain": "",
+   "origin_type": "open_web",
+   "included": true,
+   "removed_reason": null,
+   "stated_by_consultant": false,
+   "tier_reason": "Each result is graded by its own domain"
+  },
+  {
+   "source_name": "Social media and forums",
+   "domain": "forum.sample",
+   "origin_type": "open_web",
+   "included": false,
+   "removed_reason": "Not credible enough for a launch decision",
+   "stated_by_consultant": false
+  }
+ ],
+ "replies": {
+  "H2": "pilot_costs.xlsx"
+ },
+ "spot_seed": 2
+}
