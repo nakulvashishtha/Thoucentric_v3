@@ -1,0 +1,1 @@
+These are templates. Claude Code moves them to the repository root (`Dockerfile`, `render.yaml`) at Checkpoint 5 and adapts them to the backend it builds. See `prompts/00_MASTER_BUILD_PROMPT.md`, section 9.

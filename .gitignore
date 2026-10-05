@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+data/
+build/
+.DS_Store
+
+# the compiled front end in frontend/dist IS committed (it is the product UI); do not ignore it
+!frontend/dist/
