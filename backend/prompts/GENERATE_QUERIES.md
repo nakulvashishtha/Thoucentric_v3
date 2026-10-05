@@ -1,0 +1,1 @@
+Write one web search query for this research need. Use generic terms only: no client name, no private numbers. Include the country, the measure and a time range where it helps. Keep it under 15 words, like something an analyst would type into a search engine.

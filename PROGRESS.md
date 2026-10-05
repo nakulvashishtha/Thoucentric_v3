@@ -1,14 +1,14 @@
 # Progress
 
-**Current:** Checkpoint 3 done (real UI end to end, Stage 1 complete). The user asked for all checkpoints without approval stops.
+**Current:** Checkpoint 4 done (live layer and Sample 2). The user asked for all checkpoints without approval stops.
 
 | Checkpoint | Status |
 |---|---|
 | 1 Rule engine + unit tests | Done |
 | 2 Database, state machine, API, fixtures, Sample 1 | Done: contract_check 72/73 (73rd needs Sample 2, checkpoint 4); deep compare matches the recording |
 | 3 Real UI end to end + screenshots | Done: all 12 steps through the browser; docs/checkpoint3 side-by-sides |
-| 4 Live layer + Sample 2 | Next |
-| 5 Deployment package | Not started |
+| 4 Live layer + Sample 2 | Done: contract_check 73/73; sample_check passes both samples; live paths tested with stand-ins |
+| 5 Deployment package | Next |
 | 6 Fixes from live testing | Not started |
 
 **Decisions**
@@ -22,6 +22,10 @@
 - The frozen guide CSS hides every banner, so failures were silent. frontend/dist/live-errors.css (linked in index.html)
   shows error banners only; the frozen assets/ and walkthrough/ files are untouched.
 
+- Live model: JSON-schema structured output, no temperature (current Sonnet rejects it), effort low/medium, one retry,
+  cache by hash, ledger per call. Self-check checks models via the Models API (no generation cost).
+- Added a Kenya (KE) source-quality pack to source_registry.yaml for Sample 2.
+
 **Known issues:** none open.
 
-**Commands:** `make install` · `make demo` (app on :8000, demo data) · `make test` · `make check` (contract check against a running server)
+**Commands:** `make install` · `make demo` (app on :8000, demo data) · `make test` · `make check` · `python tools/sample_check.py http://localhost:8000 --sample sample_02_hospital_expansion`

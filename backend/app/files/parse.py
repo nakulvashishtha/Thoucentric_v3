@@ -140,7 +140,10 @@ def verify(fig: dict, segs: dict[str, str]) -> tuple[bool, str]:
             return False, f"quote not found at {loc or 'the stated place'}"
         loc, where = hit[0], segs[hit[0]]
     if _norm(quote) not in _norm(where):
-        return False, f"quote not found at {loc}"
+        hit = [k for k, v in segs.items() if _norm(quote) in _norm(v)]      # quoted word for word, at another place
+        if not hit:
+            return False, f"quote not found at {loc}"
+        loc, where = hit[0], segs[hit[0]]
     nums = numbers_in(quote)
     vals = [fig.get(k) for k in ("value", "low", "high") if fig.get(k) is not None]
     if not vals or not all(any(abs(float(v) - n) < 1e-6 or abs(float(v) - n) <= 0.005 * abs(n) for n in nums)

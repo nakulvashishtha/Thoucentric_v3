@@ -88,3 +88,19 @@ def test_startup_without_keys_is_demo_mode():
     assert c.get("/healthz").json() == {"ok": True}
     sc = c.get("/api/selfcheck").json()
     assert sc["red"] >= 3 and all(i["fix"] for i in sc["items"] if i["ok"] is False)
+
+
+def test_sample2_unrelated_domain_no_code_change():
+    import json, pathlib
+    exp = json.loads((pathlib.Path(__file__).resolve().parents[2] / "backend/samples/sample_02_hospital_expansion/expected.json").read_text())
+    c = client()
+    cid = c.post("/api/samples/sample_02_hospital_expansion/load").json()["id"]
+    c.post(f"/api/cases/{cid}/sample/advance?to=12")
+    b = settle(c, cid, 120)
+    assert b["jobs"]["advance"]["status"] == "done", b["jobs"]["advance"]
+    v = verdicts(b)
+    want = dict(exp["before_trip"], **exp["after_trip"])
+    assert v == {k: tuple(x) for k, x in want.items()}
+    assert b["overall"]["result"] == exp["overall"]
+    text = json.dumps(b).lower()
+    assert "credit card" not in text and "example client" not in text

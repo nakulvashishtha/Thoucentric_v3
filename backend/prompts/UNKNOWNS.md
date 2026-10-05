@@ -1,0 +1,1 @@
+List what is still unknown and would change confidence in the answer: gaps, weak or close-call results, and results with not enough evidence. One item per gap, tied to its idea code, in one short sentence each. At most 5 items. Do not repeat the results themselves.

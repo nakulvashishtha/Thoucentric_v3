@@ -23,4 +23,10 @@ countries:
     tier3: ["economictimes.indiatimes.com", "livemint.com", "business-standard.com",
             "thehindubusinessline.com", "financialexpress.com", "moneycontrol.com", "thehindu.com"]
     tier4: []
+  KE:
+    names: [Kenya]
+    tier1: ["knbs.or.ke", "*.knbs.or.ke", "*.go.ke", "centralbank.go.ke", "cma.or.ke", "kenyalaw.org"]
+    tier2: ["*.ac.ke", "kma.co.ke", "kepsa.or.ke", "aphrc.org"]
+    tier3: ["nation.africa", "businessdailyafrica.com", "the-star.co.ke", "standardmedia.co.ke"]
+    tier4: []
 industries: {}

@@ -1,0 +1,5 @@
+List what must be found out to test each idea, and where each answer will come from.
+For each need: idea (its code), text (one sentence, plain words), route ("desk" for web and published research, "client" for the client's own data, "expert" for a question to an industry expert).
+Then check the client's files: coverage is "answered_by_client_file" if a file already answers it, "partly" if a file answers part of it, else "not_covered". For covered needs give covered_by_file (the file name) and covered_locator (the exact place, for example "line 3" or "B4", copied from the brackets). For "partly", say in coverage_note what is still missing.
+Ask the client only for what their files do not already answer. Aim for 1 to 3 needs per idea, and at least one desk need for each market idea.
+Also suggest up to 5 sources worth searching for this country and industry: official statistics offices, regulators, industry bodies, recognised research firms. Give source_name and domain (for example "who.int"). Only suggest real, well-known domains.

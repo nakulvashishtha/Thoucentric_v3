@@ -1,0 +1,31 @@
+{
+ "remove_ideas": [],
+ "decide": {
+  "by_script_tag": {
+   "cross_check": {
+    "action": "keep_cross_check"
+   },
+   "reject_no_method": {
+    "action": "reject",
+    "reason": "No method shown"
+   }
+  },
+  "client_file": {
+   "action": "keep_client_reported"
+  },
+  "client_belief": {
+   "action": "keep_belief"
+  },
+  "default": {
+   "action": "approve"
+  }
+ },
+ "spot_check": "matches",
+ "trips": [
+  {
+   "idea": "H2",
+   "reply": "eldoret_rampup.xlsx"
+  }
+ ],
+ "conclusion": "Achievable at the agreed targets: demand growth and the client's own ramp-up both clear the bar. Check nurse hiring early."
+}

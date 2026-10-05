@@ -241,8 +241,13 @@ def _clean_job(job, cid: int) -> None:
     # 2. the fast model reads each source once (figures with quotes, plus a description of the source)
     files = {f["id"]: f for f in db.rows("client_file", cid)}
     for i, e in enumerate(to_read, 1):
-        if e["origin_type"] == "client_file" and e.get("file_id") in files:
-            pass                                      # read at step 1; figures already checked word for word
+        if e["origin_type"] in ("client_file", "expert_note") and e.get("file_id") in files:
+            f = files[e["file_id"]]
+            if not f.get("read") and (case.get("settings_json") or {}).get("ai_reads_client_files", True):
+                f = read_file(case, f, llm, step=6)   # a reply pasted while collecting is read now
+                e["figures_json"] = list(f.get("figures") or [])
+                if f.get("describe"):
+                    evidence.apply_describe(e, f["describe"])
         elif not (e.get("text") or "").strip():
             e["status"] = "unreadable"
         else:

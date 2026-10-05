@@ -1,0 +1,28 @@
+{
+ "before_trip": {
+  "H1": [
+   "fails",
+   "high"
+  ],
+  "H2": [
+   "not_enough",
+   "none"
+  ],
+  "H3": [
+   "holds",
+   "medium"
+  ],
+  "H4": [
+   "holds",
+   "low"
+  ]
+ },
+ "after_trip": {
+  "H2": [
+   "holds",
+   "medium"
+  ]
+ },
+ "overall": "not_achievable",
+ "trip_idea": "H2"
+}

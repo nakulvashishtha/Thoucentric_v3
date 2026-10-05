@@ -1,0 +1,79 @@
+{
+ "name": "sample_02_hospital_expansion",
+ "title": "New hospital, Nakuru (sample)",
+ "description": "A hospital group tests whether a new 150-bed hospital in another city will fill and pay its way. Pinned sample in an unrelated domain, used for tests and demos.",
+ "country": "Kenya",
+ "industry": "Healthcare providers",
+ "function": "Expansion strategy",
+ "client_name": "Mzuri Health Group",
+ "client_aliases": [
+  "Mzuri Health",
+  "MHG"
+ ],
+ "private_numbers": [
+  "KES 2.4 billion build budget",
+  "38,000 insured members in Nakuru"
+ ],
+ "raw_ask": "Mzuri Health Group wants to open a 150-bed private hospital in Nakuru. They believe demand for private inpatient care in the county is growing about 15% a year, so the hospital will fill quickly and pay its way.",
+ "client_files": [
+  "board_memo.txt",
+  "business_plan.csv"
+ ],
+ "source_plan": [
+  {
+   "source_name": "Kenya National Bureau of Statistics",
+   "domain": "knbs.or.ke",
+   "origin_type": "open_web",
+   "included": true,
+   "removed_reason": null,
+   "stated_by_consultant": false
+  },
+  {
+   "source_name": "Simulated health market database",
+   "domain": "healthmarket.sample",
+   "origin_type": "paid_db",
+   "included": true,
+   "removed_reason": null,
+   "stated_by_consultant": false
+  },
+  {
+   "source_name": "Firm research archive",
+   "domain": "",
+   "origin_type": "firm_archive",
+   "included": true,
+   "removed_reason": null,
+   "stated_by_consultant": false
+  },
+  {
+   "source_name": "Business press (sample outlets)",
+   "domain": "press.sample",
+   "origin_type": "open_web",
+   "included": true,
+   "removed_reason": null,
+   "stated_by_consultant": true,
+   "tier": 3,
+   "tier_reason": "Named business outlets with editors, used in this sample"
+  },
+  {
+   "source_name": "Open web search",
+   "domain": "",
+   "origin_type": "open_web",
+   "included": true,
+   "removed_reason": null,
+   "stated_by_consultant": false,
+   "tier_reason": "Each result is graded by its own domain"
+  },
+  {
+   "source_name": "Social media and forums",
+   "domain": "forum.sample",
+   "origin_type": "open_web",
+   "included": false,
+   "removed_reason": "Not credible enough for an investment decision",
+   "stated_by_consultant": false
+  }
+ ],
+ "replies": {
+  "H2": "eldoret_rampup.xlsx"
+ },
+ "spot_seed": 3
+}

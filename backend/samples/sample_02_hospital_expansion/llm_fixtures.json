@@ -1,0 +1,628 @@
+{
+ "READ_FILE:board_memo.txt": {
+  "figures": [
+   {
+    "value": 15,
+    "low": null,
+    "high": null,
+    "unit": "% a year",
+    "period": "",
+    "quote_span": "growing about 15% a year",
+    "locator": "line 2"
+   }
+  ],
+  "describe": {
+   "author_type": "client",
+   "method_cited": false,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2026-05",
+   "data_as_of": ""
+  }
+ },
+ "READ_FILE:business_plan.csv": {
+  "figures": [
+   {
+    "value": 70,
+    "low": null,
+    "high": null,
+    "unit": "%",
+    "period": "2026",
+    "quote_span": "70%",
+    "locator": "B2"
+   },
+   {
+    "value": 64,
+    "low": null,
+    "high": null,
+    "unit": "%",
+    "period": "2025",
+    "quote_span": "64%",
+    "locator": "B4"
+   }
+  ],
+  "describe": {
+   "author_type": "client",
+   "method_cited": true,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2026",
+   "data_as_of": "2025"
+  }
+ },
+ "READ_FILE:eldoret_rampup.xlsx": {
+  "figures": [
+   {
+    "value": 74,
+    "low": null,
+    "high": null,
+    "unit": "%",
+    "period": "Year 3",
+    "quote_span": "74%",
+    "locator": "Ramp-up!B4"
+   }
+  ],
+  "describe": {},
+  "sample_mix": null
+ },
+ "FRAME": {
+  "client_belief": "Demand for private inpatient care in Nakuru County is growing about 15% a year.",
+  "decision": "Open a 150-bed hospital in Nakuru and break even within 4 years?",
+  "case_measure_name": "Private inpatient bed-days, Nakuru County",
+  "case_measure_definition": "Inpatient bed-days a year in private and faith-based hospitals in Nakuru County, as reported to the county health department."
+ },
+ "PLAN_HYPOTHESES": {
+  "ideas": [
+   {
+    "text": "Demand grows fast enough: private inpatient bed-days in Nakuru grow at least 8% a year.",
+    "fact_type": "market",
+    "measure_name": "Growth in private inpatient bed-days",
+    "measure_unit": "% a year",
+    "measure_definition": "Compound annual growth in private and faith-based inpatient bed-days, Nakuru County.",
+    "comparator": ">=",
+    "pass_line_value": null,
+    "pass_line_formula": "required_growth",
+    "assumptions": [
+     {
+      "name": "required_growth",
+      "label": "Demand growth the hospital needs",
+      "value": 8.0,
+      "unit": "% a year",
+      "min": 3.0,
+      "max": 15.0
+     }
+    ],
+    "pass_line_source_type": "benchmark",
+    "pass_line_source_note": "Hospitals that reached target occupancy opened where demand grew 8 to 10% a year; the low end is the target.",
+    "benchmark_query": "private hospital inpatient demand growth needed to reach target occupancy secondary cities East Africa",
+    "must_have": true,
+    "recency_category": "size_growth_price",
+    "tolerance_pct": 5
+   },
+   {
+    "text": "The hospital fills: bed occupancy reaches at least 70% by year 3.",
+    "fact_type": "client_operational",
+    "measure_name": "Bed occupancy in year 3",
+    "measure_unit": "%",
+    "measure_definition": "Share of available beds occupied, averaged over the hospital's third year.",
+    "comparator": ">=",
+    "pass_line_value": 70.0,
+    "pass_line_formula": null,
+    "assumptions": [],
+    "pass_line_source_type": "client_goal",
+    "pass_line_source_note": "Break-even occupancy in the client's business plan.",
+    "must_have": true,
+    "recency_category": "structural_timing",
+    "tolerance_pct": 5
+   },
+   {
+    "text": "Staff can be hired in time: a nursing team for 150 beds is recruited within 9 months.",
+    "fact_type": "market",
+    "measure_name": "Time to recruit the nursing team",
+    "measure_unit": "months",
+    "measure_definition": "Months from starting recruitment to a full nursing team in post.",
+    "comparator": "<=",
+    "pass_line_value": null,
+    "pass_line_formula": "opening_months - 3",
+    "assumptions": [
+     {
+      "name": "opening_months",
+      "label": "Months from now to opening",
+      "value": 12.0,
+      "unit": "months",
+      "min": 6.0,
+      "max": 24.0
+     }
+    ],
+    "pass_line_source_type": "client_goal",
+    "pass_line_source_note": "Opening in 12 months, with nurses in post 3 months before opening for training.",
+    "must_have": false,
+    "recency_category": "structural_timing",
+    "tolerance_pct": 5
+   },
+   {
+    "text": "Insured patients cover costs: at least 60% of patients have insurance cover.",
+    "fact_type": "client_operational",
+    "measure_name": "Share of patients with insurance",
+    "measure_unit": "%",
+    "measure_definition": "Share of inpatients whose bills are paid by an insurer.",
+    "comparator": ">=",
+    "pass_line_value": 60.0,
+    "pass_line_formula": null,
+    "assumptions": [],
+    "pass_line_source_type": "estimate",
+    "pass_line_source_note": "The business plan's pricing assumes at least 60% insured patients.",
+    "must_have": false,
+    "recency_category": "size_growth_price",
+    "tolerance_pct": 5
+   }
+  ]
+ },
+ "ROUTE_NEEDS": {
+  "needs": [
+   {
+    "idea": "H1",
+    "text": "Official and market data on growth in private inpatient bed-days in Nakuru County.",
+    "route": "desk",
+    "coverage": "not_covered",
+    "covered_by_file": "",
+    "covered_locator": "",
+    "coverage_note": ""
+   },
+   {
+    "idea": "H1",
+    "text": "The client's own view of demand growth.",
+    "route": "client",
+    "coverage": "answered_by_client_file",
+    "covered_by_file": "board_memo.txt",
+    "covered_locator": "line 2",
+    "coverage_note": ""
+   },
+   {
+    "idea": "H2",
+    "text": "Bed occupancy reached in the first three years at the client's existing hospital.",
+    "route": "client",
+    "coverage": "not_covered",
+    "covered_by_file": "",
+    "covered_locator": "",
+    "coverage_note": ""
+   },
+   {
+    "idea": "H2",
+    "text": "Occupancy of new private hospitals in their first years in Kenya.",
+    "route": "desk",
+    "coverage": "not_covered",
+    "covered_by_file": "",
+    "covered_locator": "",
+    "coverage_note": ""
+   },
+   {
+    "idea": "H3",
+    "text": "Time needed to recruit nursing staff for a new hospital in Kenya.",
+    "route": "desk",
+    "coverage": "not_covered",
+    "covered_by_file": "",
+    "covered_locator": "",
+    "coverage_note": ""
+   },
+   {
+    "idea": "H3",
+    "text": "How long hiring a full nursing team takes in Nakuru.",
+    "route": "expert",
+    "coverage": "not_covered",
+    "covered_by_file": "",
+    "covered_locator": "",
+    "coverage_note": ""
+   },
+   {
+    "idea": "H4",
+    "text": "Share of the client's patients with insurance cover.",
+    "route": "client",
+    "coverage": "answered_by_client_file",
+    "covered_by_file": "business_plan.csv",
+    "covered_locator": "B4",
+    "coverage_note": ""
+   },
+   {
+    "idea": "H4",
+    "text": "Share of private-hospital patients with insurance in Kenyan secondary cities.",
+    "route": "desk",
+    "coverage": "not_covered",
+    "covered_by_file": "",
+    "covered_locator": "",
+    "coverage_note": ""
+   }
+  ]
+ },
+ "GENERATE_QUERIES:N1": {
+  "queries": [
+   "Nakuru County private inpatient bed-days annual growth 2021 to 2025"
+  ]
+ },
+ "GENERATE_QUERIES:N4": {
+  "queries": [
+   "Kenya new private hospital bed occupancy first three years"
+  ]
+ },
+ "GENERATE_QUERIES:N5": {
+  "queries": [
+   "Kenya time to recruit nurses for a new hospital"
+  ]
+ },
+ "GENERATE_QUERIES:N8": {
+  "queries": [
+   "Kenya private hospital patients with insurance cover share secondary cities"
+  ]
+ },
+ "READ_SOURCE:bench_h1_demand": {
+  "figures": [
+   {
+    "value": null,
+    "low": 8,
+    "high": 10,
+    "unit": "% a year",
+    "period": "",
+    "quote_span": "grew 8 to 10% a year",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "consulting firm archive",
+   "method_cited": true,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2025-11",
+   "data_as_of": "2025"
+  }
+ },
+ "READ_SOURCE:web_county": {
+  "figures": [
+   {
+    "value": 9.8,
+    "low": null,
+    "high": null,
+    "unit": "% a year",
+    "period": "2021 to 2025",
+    "quote_span": "grew 9.8% a year between 2021 and 2025",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "government statistics office",
+   "method_cited": true,
+   "original_source_named": true,
+   "original_source_name": "Nakuru County health department",
+   "published_date": "2026-04",
+   "data_as_of": "Dec 2025"
+  }
+ },
+ "READ_SOURCE:web_outlook_copy1": {
+  "figures": [
+   {
+    "value": null,
+    "low": 10,
+    "high": 12,
+    "unit": "% a year",
+    "period": "2025 to 2030",
+    "quote_span": "will grow 10 to 12% a year to 2030",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "news outlet",
+   "method_cited": false,
+   "original_source_named": true,
+   "original_source_name": "HealthMarket Kenya Outlook 2026",
+   "published_date": "2026-05-12",
+   "data_as_of": ""
+  }
+ },
+ "READ_SOURCE:web_blog_20": {
+  "figures": [
+   {
+    "value": 20,
+    "low": null,
+    "high": null,
+    "unit": "% a year",
+    "period": "",
+    "quote_span": "demand growing 20% a year",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "blog",
+   "method_cited": false,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2026-07",
+   "data_as_of": ""
+  }
+ },
+ "READ_SOURCE:web_news_nurses": {
+  "figures": [
+   {
+    "value": 12,
+    "low": null,
+    "high": null,
+    "unit": "months",
+    "period": "",
+    "quote_span": "now takes about 12 months",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "news outlet",
+   "method_cited": false,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2026-06-02",
+   "data_as_of": ""
+  }
+ },
+ "READ_SOURCE:arch_staffing": {
+  "figures": [
+   {
+    "value": null,
+    "low": 6,
+    "high": 8,
+    "unit": "months",
+    "period": "",
+    "quote_span": "were recruited in 6 to 8 months",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "consulting firm archive",
+   "method_cited": true,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2026-02",
+   "data_as_of": "Dec 2025"
+  }
+ },
+ "READ_SOURCE:arch_insurance": {
+  "figures": [
+   {
+    "value": null,
+    "low": 55,
+    "high": 65,
+    "unit": "%",
+    "period": "2025",
+    "quote_span": "55 to 65% of private-hospital patients had insurance cover",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "consulting firm archive",
+   "method_cited": true,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2026-01",
+   "data_as_of": "2025"
+  }
+ },
+ "READ_SOURCE:db_outlook": {
+  "figures": [
+   {
+    "value": null,
+    "low": 10,
+    "high": 12,
+    "unit": "% a year",
+    "period": "2025 to 2030",
+    "quote_span": "will grow 10 to 12% a year from 2025 to 2030",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "research firm",
+   "method_cited": true,
+   "original_source_named": true,
+   "original_source_name": "HealthMarket Kenya Outlook 2026",
+   "published_date": "2026-03",
+   "data_as_of": "Dec 2025"
+  }
+ },
+ "READ_SOURCE:db_occupancy": {
+  "figures": [
+   {
+    "value": 68,
+    "low": null,
+    "high": null,
+    "unit": "%",
+    "period": "year 3",
+    "quote_span": "averaged 68% bed occupancy in their third year",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "research firm",
+   "method_cited": true,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2026-01",
+   "data_as_of": "2025"
+  }
+ },
+ "READ_SOURCE:exp_nursing": {
+  "figures": [
+   {
+    "value": null,
+    "low": 8,
+    "high": 10,
+    "unit": "months",
+    "period": "",
+    "quote_span": "usually takes 8 to 10 months",
+    "locator": "para 1"
+   }
+  ],
+  "describe": {
+   "author_type": "industry expert",
+   "method_cited": false,
+   "original_source_named": false,
+   "original_source_name": "",
+   "published_date": "2026-09",
+   "data_as_of": ""
+  }
+ },
+ "LINK_EVIDENCE:web_county": {
+  "links": [
+   {
+    "idea": "H1",
+    "figure_index": 0,
+    "role": "supports_test"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:web_blog_20": {
+  "links": [
+   {
+    "idea": "H1",
+    "figure_index": 0,
+    "role": "supports_test"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:web_news_nurses": {
+  "links": [
+   {
+    "idea": "H3",
+    "figure_index": 0,
+    "role": "context"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:arch_staffing": {
+  "links": [
+   {
+    "idea": "H3",
+    "figure_index": 0,
+    "role": "supports_test"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:arch_insurance": {
+  "links": [
+   {
+    "idea": "H4",
+    "figure_index": 0,
+    "role": "context"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:db_outlook": {
+  "links": [
+   {
+    "idea": "H1",
+    "figure_index": 0,
+    "role": "supports_test"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:db_occupancy": {
+  "links": [
+   {
+    "idea": "H2",
+    "figure_index": 0,
+    "role": "context"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:exp_nursing": {
+  "links": [
+   {
+    "idea": "H3",
+    "figure_index": 0,
+    "role": "supports_test"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:file:board_memo.txt": {
+  "links": [
+   {
+    "idea": "H1",
+    "figure_index": 0,
+    "role": "supports_test"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:file:business_plan.csv": {
+  "links": [
+   {
+    "idea": "H4",
+    "figure_index": 1,
+    "role": "supports_test"
+   },
+   {
+    "idea": "H2",
+    "figure_index": 0,
+    "role": "context"
+   }
+  ],
+  "derivations": []
+ },
+ "LINK_EVIDENCE:file:eldoret_rampup.xlsx": {
+  "links": [
+   {
+    "idea": "H2",
+    "figure_index": 0,
+    "role": "supports_test"
+   }
+  ],
+  "derivations": []
+ },
+ "DRAFT_FOLLOWUP:H2": {
+  "question": "What bed occupancy did your Eldoret hospital reach in each of its first three years, and how many beds did it have?",
+  "what_we_have": "From you we already have the board memo and the business plan (break-even at 70% occupancy in year 3, and 64% of Eldoret patients insured). We don't yet have occupancy from a hospital you have already opened."
+ },
+ "SUMMARISE": {
+  "sentences": [
+   {
+    "text": "Official county data and an independent forecast put demand growth at 9.8% a year and 10 to 12% a year, above the 8% a year the hospital needs.",
+    "evidence_ids": [
+     "E2",
+     "E9"
+    ]
+   },
+   {
+    "text": "The client's Eldoret hospital reached 74% occupancy in its third year, above the 70% target.",
+    "evidence_ids": [
+     "E15"
+    ]
+   },
+   {
+    "text": "Nursing teams took 6 to 8 months to recruit in past openings and 8 to 10 months according to an expert, close to the 9-month target.",
+    "evidence_ids": [
+     "E7",
+     "E13"
+    ]
+   },
+   {
+    "text": "64% of the client's current patients have insurance cover, above the 60% target.",
+    "evidence_ids": [
+     "E12"
+    ]
+   }
+  ]
+ },
+ "UNKNOWNS": {
+  "unknowns": [
+   {
+    "idea": "H1",
+    "text": "Demand growth outside Nakuru town, where most new housing is being built."
+   },
+   {
+    "idea": "H2",
+    "text": "Whether Nakuru patients will match the Eldoret mix of insured and self-paying patients."
+   }
+  ]
+ }
+}
